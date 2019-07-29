@@ -25,7 +25,21 @@ ZSH_CUSTOM=~/.oh-my-zsh.custom
 ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git)
+plugins=(
+  git
+  colored-man-pages
+  osx
+  ruby
+  rbenv
+  gem
+  vagrant
+  ssh-agent
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  terraform
+  docker
+  docker-compose
+)
 
 source $ZSH/oh-my-zsh.sh
 
