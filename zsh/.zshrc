@@ -29,9 +29,6 @@ plugins=(
   git
   colored-man-pages
   osx
-  ruby
-  rbenv
-  gem
   vagrant
   ssh-agent
   zsh-syntax-highlighting
