@@ -7,14 +7,13 @@
 - link:
     ~/.aliases: zsh/.aliases
     ~/.functions: zsh/.functions
-    ~/.theme: zsh/.theme
+    ~/.prompt: zsh/.prompt
     ~/.zshrc: zsh/.zshrc
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore: git/.gitignore
     ~/.vimrc: vim/.vimrc
     ~/.vimrc.settings: vim/.vimrc.settings
     ~/.oh-my-zsh: oh-my-zsh
-    ~/.powerlevel10k: powerlevel10k 
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
