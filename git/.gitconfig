@@ -1,0 +1,61 @@
+[user]
+  name = Chris Roberson
+  email = cdroberson@gmail.com
+  signingkey = 
+
+[alias]
+  aliases   = config --get-regexp ^alias\\.
+  cm        = !git add -A && git commit -m
+  co        = checkout
+  co-latest-tag = !git checkout $(git tag --list | tail -n 1)
+  cob       = checkout -b
+  cp        = cherry-pick
+  ec        = config --global -e
+  hash      = rev-parse HEAD
+  hist      = log --pretty=format:'%C(dim cyan)%G?%C(reset) %C(yellow)%h%C(reset) - %C(green)(%cr)%C(reset) %C(cyan)%an%C(reset) %s %C(bold blue)%d%C(reset)' --graph --date-order
+  hista     = log --pretty=format:'%C(dim cyan)%G?%C(reset) %C(yellow)%h%C(reset) - %C(green)(%cr)%C(reset) %C(cyan)%an%C(reset) %s %C(bold blue)%d%C(reset)' --graph --date-order --all
+  prune     = fetch --all --prune
+  stash-all = stash save --include-untracked
+  unstage   = reset HEAD --
+  update    = pull --rebase
+  # list files which have changed since REVIEW_BASE
+  # (REVIEW_BASE defaults to 'master' in my zshrc)
+  files     = !git --no-pager diff --name-only $(git merge-base HEAD \"$REVIEW_BASE\")
+  # Same as above, but with a diff stat instead of just names
+  # (better for interactive use)
+  stat      = !git --no-pager diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")
+  # Open all files changed since REVIEW_BASE in Vim tabs
+  # Then, run fugitive's :Gdiff in each tab, and finally
+  # tell vim-gitgutter to show +/- for changes since REVIEW_BASE
+  review    = !vim -p $(git files) +\"tabdo Gdiff $REVIEW_BASE\" +\"let g:gitgutter_diff_base = '$REVIEW_BASE'\"
+  # Same as the above, except specify names of files as arguments,
+  # instead of opening all files:
+  # git reviewone foo.js bar.js
+  reviewone = !vim -p +\"tabdo Gdiff $REVIEW_BASE\" +\"let g:gitgutter_diff_base = '$REVIEW_BASE'\"
+
+[push]
+  default = simple
+  followTags = true
+
+[color]
+  ui = auto
+
+[core]
+  whitespace = trailing-space,space-before-tab
+  editor = nvim
+  excludesfile = ~/.gitignore
+
+[init]
+  templatedir = ~/.git_template
+
+[commit]
+  verbose = true
+
+[merge]
+  ff = only
+
+[fetch]
+  prune = true
+
+[branch]
+  autosetuprebase = always

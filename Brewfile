@@ -1,0 +1,58 @@
+# Taps
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+tap 'caskroom/versions'
+tap 'homebrew/bundle'
+
+# Binaries
+brew 'awscli'
+brew 'bash'
+brew 'bat'
+brew 'coreutils'
+brew 'getantibody/tap/antibody'
+brew 'git'
+brew 'gnupg2'
+brew 'grep'
+brew 'mackup'
+brew 'mas'
+brew 'neovim'
+brew 'pkg-config'
+brew 'thefuck'
+brew 'trash'
+brew 'tree'
+brew 'wget'
+brew 'zlib'
+brew 'zsh'
+brew 'zsh-completions'
+
+# Apps
+cask 'alfred'
+cask 'caffeine'
+cask 'discord'
+cask 'docker'
+cask 'firefox'
+cask 'github'
+cask 'google-backup-and-sync'
+cask 'google-chrome'
+cask 'gpg-suite'
+cask 'iterm2'
+cask 'java'
+cask 'slack'
+cask 'vagrant'
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
+cask 'visual-studio-code'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'qlstephen'
+
+# Fonts
+cask 'font-firacode-nerd-font'
+
+# Mac App Store
+mas '1Password', id: 1333542190
+mas 'The Unarchiver', id: 425424353

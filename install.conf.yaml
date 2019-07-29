@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.aliases: zsh/.aliases
+    ~/.functions: zsh/.functions
+    ~/.theme: zsh/.theme
+    ~/.zshrc: zsh/.zshrc
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore: git/.gitignore
+    ~/.vimrc: vim/.vimrc
+    ~/.vimrc.settings: vim/.vimrc.settings
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+#  - 
+#    command: ./.macos
+#    stdin: true
+#    stdout: true
+#    stderr: true
