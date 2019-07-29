@@ -13,11 +13,8 @@
     ~/.gitignore: git/.gitignore
     ~/.vimrc: vim/.vimrc
     ~/.vimrc.settings: vim/.vimrc.settings
+    ~/.oh-my-zsh: oh-my-zsh
+    ~/.powerlevel10k: powerlevel10k 
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-#  - 
-#    command: ./.macos
-#    stdin: true
-#    stdout: true
-#    stderr: true
