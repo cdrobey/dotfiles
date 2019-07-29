@@ -24,6 +24,7 @@ brew 'wget'
 brew 'zlib'
 brew 'zsh'
 brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
 
 # Apps
 cask 'alfred'
@@ -43,15 +44,10 @@ cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
-
 # Fonts
 cask 'font-firacode-nerd-font'
+cask 'font-inconsolata-nerd-font'
+cask 'font-meslo-nerd-font'
 
 # Mac App Store
 mas '1Password', id: 1333542190

@@ -21,7 +21,7 @@ brew doctor
 [[ -d "$PROJECTS" ]] || mkdir "$PROJECTS"
 
 # Install HomeBrew apps
-brew bundle --file=~"$DOTFILES"/Brewfile
+brew bundle --file=~"$DOTFILES"/boostrap/Brewfile
 brew cask cleanup
 
 # Pin Ruby versions so I don't lose all my gems on upgrade.
@@ -29,17 +29,12 @@ brew pin ruby
 brew pin ruby-build
 brew pin rbenv
 
-
 # Get Homesick for dotfiles
 cd ~/."$DOTFILES"} && ./install
 
-# Install vim Plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +PlugInstall +qall
-
 # Run MACOS config script
 echo "Configuring a bunch of MACOS things"
-sh ~/"$DOTFILES"/macos.sh
+sh ~/"$DOTFILES"/boostrap/macos.sh
 
 echo
 echo "Finished!"
