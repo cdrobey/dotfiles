@@ -3,7 +3,7 @@
 # Run this on a stock Mac to bootstrap it with Nate's dotfiles and customizations
 #
 
-PROJECTS="~/Projects"
+PROJECTS="~/src"
 DOTFILES="~/.dotfiles"
 
 # Ask for the administrator password upfront
@@ -34,7 +34,7 @@ cd ~/."$DOTFILES"} && ./install
 
 # Run MACOS config script
 echo "Configuring a bunch of MACOS things"
-sh ~/"$DOTFILES"/boostrap/macos.sh
+sh ~/"$DOTFILES"/bootstrap/macos.sh
 
 echo
 echo "Finished!"
