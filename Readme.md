@@ -24,6 +24,10 @@ cd ~/.dotfiles # replace with the path to your dotfiles
 ./install
 ````
 
+# Setup iterm2  profile
+theme solarized 2
+font inconsola-nerd
+
 
 [PyPI]: https://pypi.org/project/dotbot/
 [init-dotfiles]: https://github.com/Vaelatern/init-dotfiles
