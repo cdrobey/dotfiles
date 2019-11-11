@@ -45,6 +45,9 @@ cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
+cask 'teamviewer'
+cask 'tunnelblick'
+cask 'blue-jeans'
 
 # Fonts
 cask 'font-firacode-nerd-font'

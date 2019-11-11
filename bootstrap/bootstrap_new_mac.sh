@@ -3,7 +3,7 @@
 # Run this on a stock Mac to bootstrap it with Nate's dotfiles and customizations
 #
 
-PROJECTS="~/src"
+PROJECTS="~/Projects"
 DOTFILES="~/.dotfiles"
 
 # Ask for the administrator password upfront
@@ -29,7 +29,6 @@ brew pin ruby
 brew pin ruby-build
 brew pin rbenv
 
-# Get Homesick for dotfiles
 cd ~/."$DOTFILES"} && ./install
 
 # Run MACOS config script
