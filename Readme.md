@@ -39,3 +39,10 @@ font inconsola-nerd
 [wiki]: https://github.com/anishathalye/dotbot/wiki
 [contributing]: CONTRIBUTING.md
 [license]: LICENSE.md
+
+mkdir ~/repos
+cd ~/repos
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+git clone --recurse-submodules https://github.com/calvinbui/dotfiles.git
+cd dotfiles
+./install
