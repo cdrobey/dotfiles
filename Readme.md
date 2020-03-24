@@ -19,8 +19,8 @@ cd bootstrap
 ### Freshen Dotfiles?
 
 ````bash
-git clone https://github.com/cdrobey/dotfiles
-cd ~/.dotfiles # replace with the path to your dotfiles
+git clone --recurse-submodules https://github.com/calvinbui/dotfiles.git
+cd dotfiles
 ./install
 ````
 
@@ -39,10 +39,3 @@ font inconsola-nerd
 [wiki]: https://github.com/anishathalye/dotbot/wiki
 [contributing]: CONTRIBUTING.md
 [license]: LICENSE.md
-
-mkdir ~/repos
-cd ~/repos
-ssh-keyscan github.com >> ~/.ssh/known_hosts
-git clone --recurse-submodules https://github.com/calvinbui/dotfiles.git
-cd dotfiles
-./install
