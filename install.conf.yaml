@@ -1,9 +1,7 @@
 - defaults:
     link:
       relink: true
-
-- clean: ['~']
-
+      
 - link:
     ~/.aliases: zsh/.aliases
     ~/.functions: zsh/.functions
