@@ -3,7 +3,7 @@
 # Run this on a stock Mac to bootstrap it with Nate's dotfiles and customizations
 #
 
-DOTFILES=".dotfiles"
+DOTFILES="dotfiles"
 
 
 # Ask for the administrator password upfront
@@ -18,11 +18,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install HomeBrew apps
 brew bundle --file=~/"$DOTFILES"/bootstrap/Brewfile
-
-# Pin Ruby versions so I don't lose all my gems on upgrade.
-brew pin ruby
-brew pin ruby-build
-brew pin rbenv
 
 cd ~/"$DOTFILES" && ./install
 
