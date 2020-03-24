@@ -17,5 +17,8 @@
     ~/.oh-my-zsh.custom: oh-my-zsh.custom
     ~/.hushlogin: .hushlogin
 
+- create:
+    - ~/Projects
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
