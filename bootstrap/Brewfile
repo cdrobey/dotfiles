@@ -59,3 +59,4 @@ cask 'font-meslo-nerd-font'
 mas '1Password', id: 1333542190
 mas 'The Unarchiver', id: 425424353
 mas 'Todoist', id: 585829637
+mas 'Spark - Email App by Readdle', id: 1176895641
