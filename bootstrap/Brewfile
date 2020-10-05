@@ -29,7 +29,6 @@ brew 'zsh-syntax-highlighting'
 # Apps
 cask 'alfred'
 cask 'anydesk'
-cask 'blue-jeans'
 cask 'caffeine'
 cask 'discord'
 cask 'docker'
@@ -49,6 +48,7 @@ cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'tunnelblick'
+cask 'zoomus'
 
 # Fonts
 cask 'font-firacode-nerd-font'
