@@ -9,7 +9,7 @@ management.  The repository leverage several tools to automatically setup a new 
 ## Starting Fresh
 
 ```bash
-xcode-select --install.
+xcode-select --install
 git clone --recurse-submodules https://github.com/cdrobey/dotfiles.git
 cd ~/dotfiles
 ,/install
