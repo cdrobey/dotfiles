@@ -9,9 +9,11 @@ management.  The repository leverage several tools to automatically setup a new 
 ## Starting Fresh
 
 ```bash
-git clone --recurse-submodules https://github.com/calvinbui/dotfiles.git
-cd dotfiles/bootstrap
-./bootstrap_new_mac.sh
+xcode-select --install.
+git clone --recurse-submodules https://github.com/cdrobey/dotfiles.git
+cd ~/dotfiles
+,/install
+./macos
 ````
 
 ### Freshen Dotfiles
