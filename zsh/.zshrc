@@ -22,7 +22,7 @@ export VEDITOR='code'
 # your oh-my-zsh setup
 export ZSH=~/.oh-my-zsh
 ZSH_CUSTOM=~/.oh-my-zsh.custom
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="gnzh"
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(

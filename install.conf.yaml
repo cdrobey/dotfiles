@@ -1,7 +1,9 @@
 - defaults:
     link:
       relink: true
-      
+
+- clean: ['~']
+
 - link:
     ~/.aliases: zsh/.aliases
     ~/.functions: zsh/.functions
@@ -16,14 +18,10 @@
     ~/.hushlogin: .hushlogin
 
 - create:
-    - ~/Projects
+    - ~/.vim/undo-history
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-
+      
 - brewfile:
   - Brewfile
-  - brew/Brewfile
-
-- brew:
-  - git
