@@ -6,6 +6,9 @@ export DOTFILES="~/.dotfiles"
 # your project folder that we can `c [tab]` to
 export PROJECTS="~/Projects"
 
+# your brew folders
+export PATH="$PATH:/opt/homebrew/bin"
+
 # load custom aliases 
 [[ -f ~/.aliases ]] && source ~/.aliases
 
