@@ -1,7 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "puppetlabs/puppet"
 brew "awscli"
 brew "bash"
 brew "bat"
@@ -41,18 +38,10 @@ cask "google-chrome"
 cask "iterm2"
 cask "microsoft-remote-desktop"
 cask "oracle-jdk-javadoc"
-cask "pdk"
 cask "spotify"
 cask "tunnelblick"
 cask "visual-studio-code"
 cask "zoom"
-mas "GarageBand", id: 682658836
-mas "Grammarly for Safari", id: 1462114288
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Smart Countdown Timer", id: 1410709951
-vscode "eamodio.gitlens"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
