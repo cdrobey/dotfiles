@@ -42,6 +42,8 @@ cask "spotify"
 cask "tunnelblick"
 cask "visual-studio-code"
 cask "zoom"
+mas "Todoist", id:585829637
+vscode "eamodio.gitlens"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
