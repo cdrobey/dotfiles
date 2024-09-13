@@ -26,12 +26,25 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
+# Locate dock bar on  left, right or bottom.
+defaults write com.apple.dock "orientation" -string "bottom"
+
 # Wipe default macOS app icons from the Dock
 # Useful for setting up new Macs. Optionally relaunch dock with `killall Dock`.
 defaults write com.apple.dock persistent-apps -array
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
+
+# Automatically set dock size for eyes.
+defaults write com.apple.dock tilesize -int 32
+
+# Automatically enable dock magnification.
+defaults write com.apple.dock magnification -bool true  # Enable dock magnification.
+defaults write com.apple.dock largesize -int 48         # Set dock magnificated icon size.
+
+# Set Menubar to Dark Color
+defaults write NSGlobalDomain AppleInterfaceStyle Dark  # Use dark menu bar and dock.
 
 # Show the ~/Library folder.
 chflags nohidden ~/Library
