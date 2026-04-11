@@ -13,6 +13,7 @@ Plug 'bling/vim-airline'
 Plug 'godlygeek/tabular'
 Plug 'morhetz/gruvbox'
 Plug 'rodjek/vim-puppet'
+let g:polyglot_disabled = []
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
