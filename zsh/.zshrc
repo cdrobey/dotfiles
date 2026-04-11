@@ -44,4 +44,3 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
-export ANTHROPIC_API_KEY="***REMOVED***"
